@@ -12,11 +12,6 @@ public class Exercici12 {
 
         InetAddress ip;
         try {
-            Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
-
-            NetworkInterface interfaz = interfaces.nextElement();
-            System.out.println("Interfaz: " + interfaz.getName());
-
             ip = InetAddress.getLocalHost();
 
             NetworkInterface network = NetworkInterface.getByInetAddress(ip);
